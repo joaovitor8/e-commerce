@@ -1,6 +1,8 @@
 
-export default function Home() {
+
+export const Footer = () => {
   return (
     <div></div>
   )
 }
+
