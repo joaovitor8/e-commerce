@@ -1,4 +1,5 @@
 import { Navbar } from '@/components/Navbar'
+import { Categorias } from '@/components/Categorias'
 import './globals.css'
 
 export const metadata = {
@@ -15,7 +16,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <div className='flex'>
+          <Categorias />
+          {children}
+        </div>
+        
       </body>
     </html>
   )

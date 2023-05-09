@@ -14,7 +14,7 @@ export const Navbar = () => {
         <nav className="h-3/4 w-2/4 flex items-center">
           <ul className="flex items-center">
             <li className="mx-3 font-semibold"><Link href={'/'}>Home</Link></li>
-            <li className="mx-3 font-semibold"><Link href={'#'}>Unisex</Link></li>
+            <li className="mx-3 font-semibold"><Link href={'/unisex'}>Unisex</Link></li>
             <li className="mx-3 font-semibold"><Link href={'#'}>Criança</Link></li>
             <li className="mx-3 font-semibold"><Link href={'#'}>Mulher</Link></li>
             <li className="mx-3 font-semibold"><Link href={'#'}>Homem</Link></li>
