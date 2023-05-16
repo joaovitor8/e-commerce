@@ -1,6 +1,3 @@
-
 export default function Unisex() {
-  return (
-    <div></div>
-  )
+  return <div></div>
 }

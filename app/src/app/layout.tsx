@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import { Navbar } from '@/components/Navbar'
 import { Categorias } from '@/components/Categorias'
 import './globals.css'
@@ -7,23 +8,18 @@ export const metadata = {
   description: 'E-commerce generico',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
         <Navbar />
-        <div className='flex'>
+        <div className="flex">
           <Categorias />
           {children}
         </div>
-        
       </body>
     </html>
   )
 }
 
-//https://dribbble.com/shots/20432213/attachments/15478756?mode=media
+// https://dribbble.com/shots/20432213/attachments/15478756?mode=media
