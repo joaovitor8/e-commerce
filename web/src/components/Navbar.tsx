@@ -2,6 +2,7 @@
 import Link from 'next/link'
 // import Image from 'next/image'
 
+
 export const Navbar = () => {
   return (
     <header className="flex h-24 bg-slate-300">
@@ -34,18 +35,10 @@ export const Navbar = () => {
           <input type="text" className="h-3/5 w-1/2 bg-white" />
           <div className="flex">
             <Link href={'#'}>
-              <img
-                src="/baggage-claim.png"
-                alt="img"
-                className="mr-1 rounded-full bg-black p-3"
-              />
+              <img src="/baggage-claim.png" alt="img" className="mr-1 rounded-full bg-black p-3"/>
             </Link>
             <Link href={'#'}>
-              <img
-                src="/user.png"
-                alt="img"
-                className="ml-1 rounded-full bg-black p-3"
-              />
+              <img src="/user.png" alt="img" className="ml-1 rounded-full bg-black p-3"/>
             </Link>
           </div>
         </div>

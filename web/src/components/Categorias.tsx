@@ -4,19 +4,19 @@ export const Categorias = () => {
       <div>
         <div>
           <p className="mb-2">Preço</p>
-          <div>
+          <div className="space-x-1">
             <input type="checkbox" />
             <span>R$0 - R$250</span>
           </div>
-          <div>
+          <div className="space-x-1">
             <input type="checkbox" />
             <span>R$250 - R$500</span>
           </div>
-          <div>
+          <div className="space-x-1">
             <input type="checkbox" />
             <span>R$500 - R$750</span>
           </div>
-          <div>
+          <div className="space-x-1">
             <input type="checkbox" />
             <span>R$750 - R$1000</span>
           </div>
@@ -26,15 +26,15 @@ export const Categorias = () => {
 
         <div>
           <p className="mb-2">Cor</p>
-          <div>
+          <div className="space-x-1">
             <input type="checkbox" />
             <span>Verde</span>
           </div>
-          <div>
+          <div className="space-x-1">
             <input type="checkbox" />
             <span>Vermelho</span>
           </div>
-          <div>
+          <div className="space-x-1">
             <input type="checkbox" />
             <span>Azul</span>
           </div>
@@ -44,15 +44,15 @@ export const Categorias = () => {
 
         <div>
           <p className="mb-2">Tipo de Roupa</p>
-          <div>
+          <div className="space-x-1">
             <input type="checkbox" />
             <span>Tenis</span>
           </div>
-          <div>
+          <div className="space-x-1">
             <input type="checkbox" />
             <span>Bluzas</span>
           </div>
-          <div>
+          <div className="space-x-1">
             <input type="checkbox" />
             <span>Calças</span>
           </div>
