@@ -1,20 +1,37 @@
-import fastify from 'fastify' // Importando o Fastify
-import { PrismaClient } from '@prisma/client' // Importando o Prisma
+const fastify = require('fastify')() // Instanciando o fastify
+const cors = require('@fastify/cors') // Autorização para o Fron-end ter acesso
 
-const app = fastify() // Configurando o Fastify em app
-const prisma = new PrismaClient() // Criando um DB
+// -----------------------------------------------
 
-app.get('/users', async () => {
-  const users = await prisma.user.findMany()
-
-  return users
+// Registrando a autorização
+fastify.register(cors, {
+  origin: '*',
+  methods: ['POST', 'GET', 'PUT', 'DELETE'],
 })
 
-// Iniciando o servidor
-app
-  .listen({
-    port: 3333,
-  })
-  .then(() => {
-    console.log('Servidor rodando na porta: http://localhost:3333')
-  })
+// Registando o DB
+fastify.register(require(''), {})
+
+// -----------------------------------------------
+
+// Criar um usuário
+fastify.post('/produto', async (request: any, reply: any) => {})
+
+// Pegar todos os usuários
+fastify.get('/produto', async (request: any, reply: any) => {})
+
+// Pegar um usuário
+fastify.get('/produto/:id', async (request: any, reply: any) => {})
+
+// Atualizar um usuário
+fastify.put('/produto/:id', async (request: any, reply: any) => {})
+
+// Deletar um usuário
+fastify.delete('/produto/:id', async (request: any, reply: any) => {})
+
+// -----------------------------------------------
+
+// Iniciar Servidor
+fastify.listen({ port: 3333 }).then(() => {
+  console.log('Servidor rodando na porta: http://localhost:3333')
+})

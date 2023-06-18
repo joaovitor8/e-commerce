@@ -1,7 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
-// import Image from 'next/image'
-
+import Image from 'next/image'
 
 export const Navbar = () => {
   return (
@@ -20,25 +18,25 @@ export const Navbar = () => {
               <Link href={'/unisex'}>Unisex</Link>
             </li>
             <li className="mx-3 font-semibold">
-              <Link href={'#'}>Criança</Link>
+              <Link href={'/kid'}>Criança</Link>
             </li>
             <li className="mx-3 font-semibold">
-              <Link href={'#'}>Mulher</Link>
+              <Link href={'/women'}>Mulher</Link>
             </li>
             <li className="mx-3 font-semibold">
-              <Link href={'#'}>Homem</Link>
+              <Link href={'/men'}>Homem</Link>
             </li>
           </ul>
         </nav>
 
         <div className="flex h-3/4 w-2/4 items-center justify-around">
           <input type="text" className="h-3/5 w-1/2 bg-white" />
-          <div className="flex">
+          <div className="flex space-x-5">
             <Link href={'#'}>
-              <img src="/baggage-claim.png" alt="img" className="mr-1 rounded-full bg-black p-3"/>
+              <Image src={'/shopping.png'} alt={''} height={35} width={35} />
             </Link>
             <Link href={'#'}>
-              <img src="/user.png" alt="img" className="ml-1 rounded-full bg-black p-3"/>
+              <Image src={'/account.png'} alt={''} height={35} width={35} />
             </Link>
           </div>
         </div>
