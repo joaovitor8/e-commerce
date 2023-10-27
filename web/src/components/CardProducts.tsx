@@ -1,16 +1,10 @@
 "use client"
 
+import { ProdutosTipo } from "@/components/Type"
 import { useEffect, useState } from "react"
 import axios from "axios"
 
-interface ProdutosTipo {
-  id: number
-  nome: string
-  preco: number
-  tipo: string
-}
-
-export const Products = () => {
+export const CardProducts = () => {
   const [produtos, setProdutos] = useState<ProdutosTipo[]>([])
 
   const GetProdutos = () => {
@@ -29,7 +23,7 @@ export const Products = () => {
   console.log(produtos)
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen w-full">
       <div className="flex flex-wrap justify-center">
         {produtos.map((p, key) => (
           <div key={key} className="bg-slate-300 h-[270px] w-[200px] m-1">

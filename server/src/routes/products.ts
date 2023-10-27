@@ -6,6 +6,9 @@ export async function RouteProducts(app: FastifyInstance) {
     try {
       const data = produtos
 
+      let tipo = "Roupas"
+
+
       reply.send(data)
     } catch (error) {
       console.error(error)

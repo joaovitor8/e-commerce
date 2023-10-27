@@ -1,9 +1,7 @@
-import { Products } from "@/components/Products"
+
 
 export default function Home() {
   return (
-    <main>
-      <Products />
-    </main>
+    <main className="min-h-screen"></main>
   )
 }
