@@ -20,8 +20,6 @@ export const CardProducts = () => {
     GetProdutos()
   }, [])
 
-  console.log(produtos)
-
   return (
     <div className="min-h-screen w-full">
       <div className="flex flex-wrap justify-center">
