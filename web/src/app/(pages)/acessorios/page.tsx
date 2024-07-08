@@ -1,6 +1,6 @@
 
 
-export default function Home() {
+export default function Acessorios() {
   return (
     <main className=""></main>
   );

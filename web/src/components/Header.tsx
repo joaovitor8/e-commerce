@@ -9,16 +9,16 @@ export const Header = () => {
     <header className="h-20 px-10 flex items-center justify-between border-b">
       <h1><Link href={"/"} className="text-4xl">EC</Link></h1>
 
-      {/* <NavigationMenu>
+      <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem className="space-x-5">
-            <Link href={"/"}><NavigationMenuLink>Masculino</NavigationMenuLink></Link>
-            <Link href={"/"}><NavigationMenuLink>Feminino</NavigationMenuLink></Link>
-            <Link href={"/"}><NavigationMenuLink>Infantil</NavigationMenuLink></Link>
-            <Link href={"/"}><NavigationMenuLink>Novo</NavigationMenuLink></Link>
+            <Link href={"/roupas"}><NavigationMenuLink>Roupas</NavigationMenuLink></Link>
+            <Link href={"/calcados"}><NavigationMenuLink>Calçados</NavigationMenuLink></Link>
+            <Link href={"/acessorios"}><NavigationMenuLink>Acessorios</NavigationMenuLink></Link>
+            {/* <Link href={"/"}><NavigationMenuLink></NavigationMenuLink></Link> */}
           </NavigationMenuItem>
         </NavigationMenuList>
-      </NavigationMenu> */}
+      </NavigationMenu>
 
       <div className="flex space-x-3">
         <Link href={"/"}> <ArchiveIcon/> </Link>
