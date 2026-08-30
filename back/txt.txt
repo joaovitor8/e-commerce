@@ -1,0 +1,3 @@
+nest g module NOME
+nest g controller NOME
+nest g service NOME
